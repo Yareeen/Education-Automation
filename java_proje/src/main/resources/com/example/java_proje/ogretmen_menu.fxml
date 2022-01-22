@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_proje.Kisiler_Controller">
+   <children>
+      <Pane prefHeight="415.0" prefWidth="163.0" style="-fx-background-color: #6F88FC;">
+         <children>
+            <Line endX="-34.0" layoutX="100.0" layoutY="107.0" startX="-100.0" />
+            <ImageView id="hat_image" fitHeight="67.0" fitWidth="77.0" layoutX="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hat.png" />
+               </image></ImageView>
+            <Label layoutX="16.0" layoutY="53.0" prefHeight="45.0" prefWidth="139.0" text="Öğretmen İşlemleri" textAlignment="CENTER" textFill="#320606" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="not_ekle_ac" alignment="CENTER" layoutX="-36.0" layoutY="205.0" mnemonicParsing="false" onAction="#not_ekle_ac_button" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: #6F88FC;" text="Not Ekle" textOverrun="CLIP">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="devamsiz_ekle" alignment="CENTER" layoutX="-33.0" layoutY="231.0" mnemonicParsing="false" onAction="#devamsiz_ekle" prefHeight="27.0" prefWidth="170.0" style="-fx-background-color: #6F88FC;" text="Devamsızlık Ekle" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="guncelle" alignment="CENTER" layoutX="-3.0" layoutY="291.0" mnemonicParsing="false" onAction="#bilgilerimiGuncelle" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: #6F88FC;" text="Bilgilerimi Güncelle" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ogr_goruntule" alignment="CENTER" layoutY="178.0" mnemonicParsing="false" onAction="#ogr_gr_ac" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: #6F88FC;" text="Öğrencileri Görüntüle" textOverrun="CLIP">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="162.0" layoutY="-5.0" prefHeight="45.0" prefWidth="490.0" style="-fx-background-color: #6F88FC;">
+         <children>
+            <Label layoutX="199.0" layoutY="16.0" prefHeight="19.0" prefWidth="80.0" text="Hoşgeldiniz" textAlignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="169.0" layoutY="44.0" prefHeight="369.0" prefWidth="476.0" />
+      <Button fx:id="cikis" layoutX="43.0" layoutY="363.0" mnemonicParsing="false" onAction="#cikisButton" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #0a0a24;" text="Çıkış" textFill="#ffe1ef">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Bilgileri_goruntuleme" alignment="CENTER" layoutX="-30.0" layoutY="260.0" mnemonicParsing="false" onAction="#Bilgi_goruntule_button" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: #6F88FC;" text="Bilgilerim" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="label_tc" layoutX="209.0" layoutY="80.0" prefHeight="17.0" prefWidth="37.0" text="TC" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_numara" layoutX="206.0" layoutY="128.0" text="Numara" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_isim" layoutX="206.0" layoutY="182.0" prefHeight="17.0" prefWidth="31.0" text="İsim" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_sifre" layoutX="206.0" layoutY="236.0" text="Şifre" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="tc_fx" layoutX="322.0" layoutY="80.0" prefHeight="17.0" prefWidth="209.0" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="numara_fx" layoutX="322.0" layoutY="128.0" prefHeight="17.0" prefWidth="223.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="isim_fx" layoutX="321.0" layoutY="182.0" prefHeight="17.0" prefWidth="170.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="sifre_fx" layoutX="321.0" layoutY="238.0" prefHeight="17.0" prefWidth="170.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_okul" layoutX="205.0" layoutY="286.0" text="Çalıştığı Okul" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="okul_fx" layoutX="323.0" layoutY="285.0" prefHeight="25.0" prefWidth="297.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
